@@ -1,8 +1,8 @@
 ---
 title: Age-Calculator
-date: 2026-02-24
+date: 2026-02-26
 author: Your Name
-cell_count: 5
+cell_count: 6
 score: 5
 ---
 
@@ -36,6 +36,11 @@ age
     33
 
 
+
+
+```python
+
+```
 
 
 ```python
