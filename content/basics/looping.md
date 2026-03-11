@@ -1,9 +1,9 @@
 ---
 title: Looping
-date: 2026-03-04
+date: 2026-03-11
 author: Your Name
-cell_count: 8
-score: 5
+cell_count: 10
+score: 10
 ---
 
 ```python
@@ -12,6 +12,28 @@ print("hello world")
 
     hello world
     
+
+
+```python
+##sum of elements in a user entered list
+arr = []
+j=0
+n = int(input("enter number of elements: "))
+for i in range (n):
+    elements = int(input("enter element: "))
+    arr.append(elements)
+print("elements entered are: ",arr)
+
+sum=0
+while j <= n:
+    sum=sum+arr[i]
+    j = j+1
+print("sum of all elements in list is", sum)
+    
+
+
+
+```
 
 
 ```python
@@ -113,5 +135,10 @@ print("largest number is: ",largest)
 ```
 
 
+```python
+
+```
+
+
 ---
-**Score: 5**
+**Score: 10**

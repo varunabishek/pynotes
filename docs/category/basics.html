@@ -47,7 +47,7 @@
 
             <article>
                 <a href="https://varunabishek.github.io/pynotes/age-calculator.html"><h3 class="article-title">Age-Calculator</h3></a>
-<h6 class="subheader" title="2026-03-04T00:00:00-05:00">Wed 04 March 2026
+<h6 class="subheader" title="2026-03-11T00:00:00-04:00">Wed 11 March 2026
 </h6>
 
 
@@ -94,8 +94,44 @@
 
 
             <article>
+                <a href="https://varunabishek.github.io/pynotes/funcrtions.html"><h3 class="article-title">Funcrtions</h3></a>
+<h6 class="subheader" title="2026-03-11T00:00:00-04:00">Wed 11 March 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">vowels_present</span><span class="p">(</span><span class="n">strx</span><span class="p">):</span>
+    <span class="n">count</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">strx</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;e&quot;</span><span class="p">,</span><span class="s2">&quot;i&quot;</span><span class="p">,</span><span class="s2">&quot;o&quot;</span><span class="p">,</span><span class="s2">&quot;u&quot;</span><span class="p">):</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">strx</span><span class="p">)</span>
+
+<span class="n">stry</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter str: &quot;</span><span class="p">))</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">vowels_present</span><span class="p">(</span><span class="n">stry</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the numbers of vowels present is: &quot;</span><span class="p">,</span><span class="n">result</span><span class="p">)</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#problems on args:</span>
+
+<span class="k">def</span> <span class="nf">sum_all</span><span class="p">(</span><span class="o">*</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://varunabishek.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://varunabishek.github.io/pynotes/funcrtions.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://varunabishek.github.io/pynotes/looping.html"><h3 class="article-title">Looping</h3></a>
-<h6 class="subheader" title="2026-03-04T00:00:00-05:00">Wed 04 March 2026
+<h6 class="subheader" title="2026-03-11T00:00:00-04:00">Wed 11 March 2026
 </h6>
 
 
@@ -105,22 +141,18 @@
 <div class="highlight"><pre><span></span><code>hello world
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">##Multiplication Table using For loop </span>
+<div class="highlight"><pre><span></span><code><span class="c1">##sum of elements in a user entered list</span>
+<span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">j</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter number of elements: &quot;</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">elements</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter element: &quot;</span><span class="p">))</span>
+    <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">elements</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;elements entered are: &quot;</span><span class="p">,</span><span class="n">arr</span><span class="p">)</span>
 
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter the number: &quot;</span><span class="p">))</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="n">n</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
-    <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">##factorial</span>
-
-<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter number: &quot;</span><span class="p">))</span>
-<span class="n">factorial</span><span class="o">=</span><span class="mi">1</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-    <span class="n">factorial</span> <span class="o">=</span> <span class="n">factorial</span><span class="o">*</span><span class="n">i</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">factorial …</span></code></pre></div><p class="subheader">Category: <a href="https://varunabishek.github.io/pynotes/category/basics.html">basics</a>
+<span class="nb">sum</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">while</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="nb">sum</span><span class="o">=</span><span class="nb">sum</span><span class="o">+</span><span class="n">arr</span><span class="p">[</span><span class="n">i …</span></code></pre></div><p class="subheader">Category: <a href="https://varunabishek.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 
